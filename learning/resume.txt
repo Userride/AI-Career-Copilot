@@ -1,0 +1,26 @@
+Jane Doe
+jane.doe@example.com
+123-456-7890
+San Francisco, CA
+
+SUMMARY
+Experienced Full Stack Software Engineer with 5+ years of experience building scalable web applications. Strong focus on modern JavaScript frameworks, backend REST APIs, and database design.
+
+TECHNICAL SKILLS
+- Languages: JavaScript, TypeScript, HTML5, CSS3, SQL
+- Frameworks & Libraries: React, Node.js, Express, Next.js, Redux
+- Databases & Tools: MongoDB, PostgreSQL, Git, Docker, AWS (S3, EC2)
+
+PROFESSIONAL EXPERIENCE
+Senior Software Engineer | TechCorp Inc. | 2022 - Present
+- Designed and built a customer analytics dashboard using React and Node.js, improving load times by 40%.
+- Led a team of 3 developers to migrate a legacy codebase to TypeScript, reducing bug count by 25%.
+- Implemented containerized deployment using Docker and AWS, streamlining CI/CD pipelines.
+
+Software Engineer | DevShop LLC | 2020 - 2022
+- Developed RESTful API endpoints in Express.js supporting 10,000+ daily active users.
+- Maintained MongoDB databases, optimized complex aggregation queries.
+- Collaborated with UI/UX designers to implement responsive, pixel-perfect interfaces.
+
+EDUCATION
+B.S. in Computer Science | State University | 2016 - 2020
