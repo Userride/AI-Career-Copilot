@@ -652,6 +652,8 @@ To guarantee maximum uptime and reliability, the gateway implements a multi-prov
 *   Dispatches notifications privately and exclusively to the user's authenticated email address provided during registration.
 *   Uses SMTP configuration for live dispatching.
 *   If SMTP credentials are not configured, the HTML matches are written to local debug files under `backend/logs/job-email-*.html` for testing convenience.
+*   **Debugging Tool**: You can verify SMTP settings directly via the test route `GET /api/health/test-email?to=your-email@example.com` which returns detailed diagnostic logs and error information.
+
 
 ---
 
@@ -674,7 +676,7 @@ The frontend is a React application built on top of Vite and styled with premium
 
 ## 🌐 API Routes Reference
 
-All API calls (except authentication) require a valid Bearer token in the `Authorization` header.
+All API calls (except authentication and health/test routes) require a valid Bearer token in the `Authorization` header.
 
 | Method | Route | Description | Request Payload | Response Sample |
 | :--- | :--- | :--- | :--- | :--- |
@@ -686,6 +688,9 @@ All API calls (except authentication) require a valid Bearer token in the `Autho
 | **GET** | `/api/analysis/:id` | Fetch complete details of a specific analysis | *None* | `{ analysis: {...} }` |
 | **GET** | `/api/analysis/:id/status` | Fetch real-time status and active agent log | *None* | `{ status, currentAgent, agentLog, ... }` |
 | **GET** | `/api/jobs` | Get list of seeded jobs | *None* | `{ jobs: [...] }` |
+| **GET** | `/api/health/test-email` | Diagnostic route to test SMTP configuration | *None* (query `to` optional) | `{ status: "success", message: "...", messageId: "...", response: "...", smtpConfig: {...} }` |
+
+
 
 ---
 
